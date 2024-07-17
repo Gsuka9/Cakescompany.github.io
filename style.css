@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial';
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #d2691e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    margin: 15px 0;
+}
+nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(65, 112, 152);
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.container img{
+    max-height: 400px;
+    max-width: 500px;
+}
+.slider {
+    display: flex;
+    animation: slide 30s infinite;
+}
+.slider img {
+    width: 100%;
+    border-radius: 200px;
+    margin-top: 30px;
+    height: auto;
+    flex-shrink: 0;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+section {
+    margin: 20px 20px;
+}
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service {
+    background: #fff3e0;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1 1 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.service img {
+    max-width: 50%;
+    max-height: 300px;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #d2691e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
